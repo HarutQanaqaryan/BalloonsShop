@@ -19,6 +19,12 @@
                     align-items: center;
                     flex-wrap: wrap;
                 }
+
+                @media screen and (max-width: 767px) {
+                    .main-part-page {
+                        display: inline-block;
+                    }
+                }
                 
                 .cart {
                     background-color: rgb(255, 255, 255);
@@ -157,10 +163,18 @@
                     flex-wrap: wrap;
                 }
                 
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 800px) {
                     .paragraph1 {
-                        width: 300px;
+                        width: 400px;
                     }
+                    .main-part-page {
+                        display: flex;
+                      flex-direction: column;
+                    }
+                  footer {
+                      display: flex;
+                      flex-direction: column;
+                  }
                 }
                 
                 .home-page-photos {
