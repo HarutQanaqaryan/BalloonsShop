@@ -1,45 +1,53 @@
                 body {
-                    background-image: linear-gradient(rgb(237, 222, 241), rgb(185, 140, 196));
+                    background-image: linear-gradient(rgb(237, 222, 241), rgb(190, 141, 202));
                     background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 1500px;
+                    margin: auto;
                 }
-                
+
+                @media screen and (max-width: 900px) {
+                    body {
+                        width: auto;
+                    }
+                }
+
                 a {
                     color: rgb(255, 255, 255);
                     text-decoration: none;
                 }
-                
+
                 a:hover {
-                    color: rgb(204, 0, 255);
+                    color: rgb(135, 130, 136);
                 }
-                
-                .main-part-page {
+
+                /* ==== Main Part Site ==== */
+
+                .main {
+                    color: rgb(189, 137, 176);
+                    background-size: cover;
+                    border-radius: 5px;
                     font-family: 'Montserrat Alternates', sans-serif;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+                    padding-right: 70px;
                 }
 
-                    .cart {
-                    background-color: rgb(255, 255, 255);
-                    border: 1px solid rgb(189, 137, 176);
-                    color: rgb(189, 137, 176);
-                    font-size: 17px;
-                    border-radius: 15px;
-                    width: 100px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                }
-                
+                .tel {
+                    color: rgb(189, 137, 176);               
+                 }
+
                 .contacts {
+                    font-family: 'Montserrat Alternates', sans-serif;
                     display: flex;
-                    align-items: center;
                     flex-direction: column;
-                    font-size: 20px;
-                    color: rgb(189, 137, 176);
+                    font-size: 20px;          
                 }
-                
+
+                /* ==== Menu ==== */
+
                 .site-menu {
                     text-align: center;
                     font-family: 'Montserrat Alternates', sans-serif;
@@ -50,12 +58,14 @@
                     flex-wrap: wrap;
                     justify-content: space-around;
                 }
-                
+
+                /* ==== Drop Down ==== */
+
                 .dropdown {
                     position: relative;
                     display: inline-block;
                 }
-                
+
                 .dropdown-content {
                     display: none;
                     position: absolute;
@@ -64,22 +74,24 @@
                     z-index: 1;
                     opacity: 0.6;
                 }
-                
+
                 .dropdown-content a {
                     color: rgb(255, 255, 255);
                     padding: 12px 16px;
                     display: block;
                     font-size: 25px;
                 }
-                
+
                 .dropdown-content a:hover {
                     background-color: rgb(163, 163, 163);
                 }
-                
+
                 .dropdown:hover .dropdown-content {
                     display: block;
                 }
-                
+
+                /* ==== Main Section ==== */
+
                 .main-section {
                     background-image: url(./photo/background.jpg);
                     background-size: cover;
@@ -89,33 +101,36 @@
                     height: 500px;
                     font-family: 'Marck Script', cursive;
                     color: rgb(100, 0, 87);
+                    overflow: hidden;
                 }
-                
+
                 .main-section-content {
                     display: flex;
                     flex-wrap: wrap;
                     align-content: space-between;
                     flex-direction: column;
                 }
-                
+
                 .main-section-header {
                     font-size: 80px;
                 }
-                
+
+                /* ==== Aside ==== */
+
                 .sentence {
                     background-size: cover;
                     text-align: center;
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
-                    align-items: center; 
+                    align-items: center;
                 }
-                
+
                 .img-versel {
                     background-size: cover;
                     margin-top: 60px;
                 }
-                
+
                 .paragraph1 {
                     width: 500px;
                     background-size: cover;
@@ -125,12 +140,12 @@
                     color: rgb(255, 255, 255);
                     transition: 500ms;
                 }
-                
+
                 .paragraph1:hover {
                     transform: scale(1.4);
                     transition: 2000ms;
                 }
-                
+
                 .swipe-up {
                     position: fixed;
                     width: 50px;
@@ -141,33 +156,22 @@
                     display: flex;
                     flex-wrap: wrap;
                 }
-                
-                footer {
-                    background-color: rgb(255, 255, 255);
-                    color: rgb(189, 137, 176);
-                    background-size: cover;
-                    border-radius: 5px;
-                    font-family: 'Montserrat Alternates', sans-serif;
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    flex-wrap: wrap;
-                }
-                
-                @media screen and (max-width: 800px) {
+
+            
+                @media screen and (max-width: 900px) {
                     .paragraph1 {
                         width: 400px;
                     }
-                    .main-part-page {
+                    .main {
                         display: flex;
-                      flex-direction: column;
+                        flex-direction: column;
                     }
-                  footer {
-                      display: flex;
-                      flex-direction: column;
-                  }
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
-                
+
                 .home-page-photos {
                     text-align: center;
                     background-size: cover;
@@ -177,100 +181,141 @@
                     flex-wrap: wrap;
                     transition: 2000ms;
                 }
-                
-                .photo1 {
+
+                .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
                     transition: 500ms;
                     border-radius: 20px;
                 }
-                
-                .photo1:hover {
-                    transform: scale(1.4);
-                    transition: 2000ms;
-                }
-                
-                .photo2 {
-                    transition: 500ms;
-                    border-radius: 20px;
-                }
-                
-                .photo2:hover {
-                    transform: scale(1.4);
-                    transition: 2000ms;
-                }
-                
-                .photo3 {
-                    transition: 500ms;
-                    border-radius: 20px;
-                }
-                
-                .photo3:hover {
-                    transform: scale(1.4);
-                    transition: 2000ms;
-                }
-                
-                .photo4 {
-                    transition: 500ms;
-                    border-radius: 20px;
-                }
-                
-                .photo4:hover {
-                    transform: scale(1.4);
-                    transition: 2000ms;
-                }
-                
-                .photo5 {
-                    transition: 500ms;
-                    border-radius: 20px;
-                }
-                
-                .photo5:hover {
-                    transform: scale(1.4);
-                    transition: 2000ms;
-                }
-                
-                .photo6 {
-                    transition: 500ms;
-                    border-radius: 20px;
-                }
-                
-                .photo6:hover {
+
+                .photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover, .photo5:hover, .photo6:hover {
                     transform: scale(1.4);
                     transition: 2000ms;
                 }
 
-                .about{
+                .about {
+                    background-color: rgba(255, 254, 254, 0.233);
+                    border-radius: 5px;
+                    padding-bottom: 70px;
+                    margin-top: 60px;
                     font-family: 'Marck Script', cursive;
                     font-size: 25px;
                     color: rgb(255, 255, 255);
-                    text-align: center;
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
+                    text-align: center;
+                }
+
+                .about-header {
+                    font-size: 60px;
+                }
+
+                .text-about {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                }
+
+                /* ======== Slider ======== */
+
+                .recalls {
+                    background-color: rgba(255, 254, 254, 0.123);
+                    border-radius: 5px;
+                    padding-bottom: 70px;
+                    margin-top: 60px;
+                    font-family: 'Marck Script', cursive;
+                    font-size: 45px;
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .slideshow-container {
+                    background-color: rgba(255, 254, 254, 0.205);
+                    width: 300px;
+                    height: 450px;
+                    position: relative;
+                    margin: auto;
+                    padding-bottom: -10px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+
+                .prev, .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 40%;
+                    padding: 16px;
+                    color: rgb(110, 100, 100);
+                    font-weight: bold;
+                    font-size: 20px;
+                    transition: 0.6s;
+                }
+
+                .prev {
+                    left: 0;
+                }
+
+                .next {
+                    right: 0;
+                }
+
+                .prev:hover, .next:hover {
+                    background-color: rgba(71, 22, 65, 0.199);
+                }
+
+                /* ===== Burger Menu ===== */
+
+                .burger-icon {
+                    display: none;
+                }
+
+                .burger-menu {
+                    text-align: center;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 25px;
+                    border-radius: 5px;
+                    background-color: rgb(189, 137, 176);
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                @media screen and (max-width: 900px) {
+                    .burger-icon {
+                        display: block;
+                    }
+                    .site-menu {
+                        display: none;
+                    }
+                }
+
+                .feedback-tels {
+                    background-color: rgba(255, 254, 254, 0.123);
+                    border-radius: 5px;
+                    padding-bottom: 70px;
+                    margin-top: 60px;
+                    font-family: 'Marck Script', cursive;
+                    font-size: 30px;
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                /* ==== Footer ==== */
+
+                footer {
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(189, 137, 176);
+                    background-size: cover;
+                    border-radius: 5px;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: wrap;
                 }
 
 
-                /* ======== Slider ======== */
-                .slideshow-container {
-                    width: 300px;
-                    position: relative;
-                    margin: auto;
-                   }
-                
-                    .prev, .next {
-                        cursor: pointer;
-                        position: absolute;
-                        top: 40%;
-                        padding: 16px;
-                        color: rgb(110, 100, 100);
-                        font-weight: bold;
-                        font-size: 20px;
-                        transition: 0.6s;
-                        border-radius: 20px;
-                     }
-                     .next {
-                        right: 0;
-                      }
-                
-                        .prev:hover, .next:hover {
-                         background-color: rgba(71, 22, 65, 0.199);
-                        }
+             

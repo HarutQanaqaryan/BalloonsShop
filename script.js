@@ -23,3 +23,14 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += "active";
 }
+
+
+function openbox(id){
+      let display = document.getElementById(id).style.display;
+        if(display=='none'){
+           document.getElementById(id).style.display='block';
+        }else{
+           document.getElementById(id).style.display='none';
+        }
+    }
+    
