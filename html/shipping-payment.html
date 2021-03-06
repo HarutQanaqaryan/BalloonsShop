@@ -16,17 +16,17 @@
 
 <body>
     <header>
-        <span class="main-part-page">
-              <div class="contacts">
-                <a href="https://wa.me/79803441988">+7(980)344-19-88</a>
-                <a href="tel:+79003007474">+7(900)300-74-74</a>
-                <a href="tel:+79009517676">+7(900)951-76-76</a>
-            </div>
-        <a href="index.html">
-            <img src="../photo/logo.png" alt="Логотип Воздушная Академия" width="500px">
+        <div class="main">
+        <a href="../index.html">
+            <img src="../photo/logo.png" class="logo-img" alt="Логотип Воздушная Академия" width="250px">
         </a>
-        <a href="../html/basket.html" class="cart"> <img src="../photo/bascet.png" alt="basket-logotip" width="20px">Корзина</a>
-    </span>
+            </span>
+            <span class="contacts">
+                <a href="https://wa.me/79803441988" class="tel">+7(980)344-19-88</a>
+                <a href="tel:+79003007474"  class="tel">+7(900)300-74-74</a>
+                <a href="tel:+79009517676"  class="tel">+7(900)951-76-76</a>
+              </span>
+        </div>
         <nav class="site-menu">
             <a href="../index.html" class="home">Главная</a>
             <div class="dropdown">
@@ -40,24 +40,34 @@
             </div>
             <a href="../html/shipping-payment.html" class="shipping-payment">Доставка и Оплата</a>
         </nav>
-    </header>
-    <main>
+              <a href="#" onclick="openbox('box'); " class="burger-icon"><img src="../photo/burger-icon.png" alt="menu icon" width="50px"> </a>
+              <div id="box" style="display: none;"><nav class="burger-menu">
+                <a href="../index.html" class="home">Главная</a>
+                <a href="../html/catalog.html" class="catalog">Каталог</a>
+                <a href="../html/shipping-payment.html" class="shipping-payment">Доставка и Оплата</a>
+              </nav>
+            </div>
 
-    </main>
+    </header>
+
+    <main></main>
+
     <footer>
-        <div>
-            <a href="https://wa.me/79803441988 "> <img src="../photo/whatsapp-symbol.svg " alt="Wats-up " width="30px "></a>
-            <a href="https://www.instagram.com/vozdushnaia_akademia_vrn/?hl=ru "><img src="../photo/instagramIcon.png " alt="Instagram Logotip " width="30px "></a>
-            <a href="https://www.facebook.com/search/top?q=vozdushnaia_akademia_vrn "> <img src="../photo/facebook-logo.png " alt="FaceBook Logotip " width="30px "></a>
-            <a href="https://vk.com/vozdushnayaakademiya "> <img src="../photo/vk-logotip.svg " alt="FaceBook Logotip " width="30px "></a>
+        <div class="feedback">
+            <a href="https://wa.me/79803441988 " target="_blank"> <img src="../photo/whatsapp-symbol.svg " alt="Wats-up " width="30px "></a>
+            <a href="https://www.instagram.com/vozdushnaia_akademia_vrn/?hl=ru " target="_blank" ><img src="../photo/instagramIcon.png " alt="Instagram Logotip " width="30px "></a>
+            <a href="https://www.facebook.com/search/top?q=vozdushnaia_akademia_vrn " target="_blank">  <img src="../photo/facebook-logo.png " alt="FaceBook Logotip " width="30px "></a>
+            <a href="https://vk.com/vozdushnayaakademiya " target="_blank"> <img src="../photo/vk-logotip.svg " alt="FaceBook Logotip " width="30px "></a>
         </div>
-        <a href="index.html ">
-            <img src="../photo/logo.png " alt="Логотип Воздушная Академия " width="250px ">
+        <a href="../index.html ">
+            <img src="../photo/logo.png " alt="Логотип Воздушная Академия " width="100px ">
         </a>
 
-        <p>Copyright Harutyun Kanakaryan &#169 2021</p>
-
+       
+        <p>H.Kanakaryan &#169 2021</p>
+       
     </footer>
+    <script src="../script.js"></script>
 </body>
 
 </html>
