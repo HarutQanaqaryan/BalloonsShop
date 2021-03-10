@@ -239,60 +239,83 @@ a:hover {
 }
 
 /* ======== Slider ======== */
-
-.recalls {
-    background-color: rgba(255, 254, 254, 0.123);
-    border-radius: 5px;
-    padding-bottom: 70px;
-    margin-top: 60px;
-    font-family: 'Marck Script', cursive;
-    font-size: 45px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.recalls-header {
     text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
 }
-
-.slideshow-container {
+#slides {
     background-color: rgba(255, 254, 254, 0.205);
-    width: 300px;
-    height: 450px;
+    width: 180px;
+    height: 550px;
     position: relative;
     margin: auto;
     padding-bottom: -10px;
     padding-left: 60px;
     padding-right: 60px;
+    list-style-type: none;
 }
 
-.prev, .next {
-    cursor: pointer;
+.slide {
     position: absolute;
-    top: 40%;
-    padding: 16px;
-    color: rgb(110, 100, 100);
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
-@media screen and (max-width: 800px) {
-    .slideshow-container {
-        padding: 0;
-    }
+.showing {
+    opacity: 1;
+    z-index: 2;
 }
 
-.prev {
-    left: 0;
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
 }
 
-.next {
-    right: 0;
+.slide:nth-of-type(1) {
+    background-image: url(./recalls/slide1.jpg)
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(71, 22, 65, 0.199);
+.slide:nth-of-type(2) {
+    background-image: url(./recalls/slide2.jpg)
 }
+
+.slide:nth-of-type(3) {
+    background-image: url(./recalls/slide3.jpg)
+}
+
+.slide:nth-of-type(4) {
+    background-image: url(./recalls/slide4.jpg);
+}
+
+.slide:nth-of-type(5) {
+    background-image: url(./recalls/slide5.jpg);
+}
+.slide:nth-of-type(6) {
+    background-image: url(./recalls/slide6.jpg);
+}
+.slide:nth-of-type(7) {
+    background-image: url(./recalls/slide7.jpg);
+}
+.slide:nth-of-type(8) {
+    background-image: url(./recalls/slide8.jpg);
+}
+.slide:nth-of-type(9) {
+    background-image: url(./recalls/slide9.jpg);
+}
+
 
 /* ===== Burger Menu ===== */
 
@@ -309,7 +332,6 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-
 
 .burger-menu-dropdown-content {
     font-size: 15px;
