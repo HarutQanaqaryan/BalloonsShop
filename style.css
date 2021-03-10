@@ -386,10 +386,15 @@ footer {
 #happy-b-d, #garlands, #new-born, #gender-party, #photozones, #others {
     text-align: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+    #happy-b-d, #garlands, #new-born, #gender-party, #photozones, #others {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .catalog-item {
