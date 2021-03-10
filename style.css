@@ -303,11 +303,16 @@
                 .burger-menu {
                     text-align: center;
                     font-family: 'Montserrat Alternates', sans-serif;
-                    font-size: 25px;
+                    font-size: 20px;
                     border-radius: 5px;
                     background-color: rgb(189, 137, 176);
                     display: flex;
                     flex-direction: column;
+                }
+
+
+                .burger-menu-dropdown-content {
+                    font-size: 15px;
                 }
 
                 @media screen and (max-width: 900px) {
@@ -348,12 +353,14 @@
                 }
 
                 /* ==== Catalog ==== */
+
                 .catalog-container {
                     text-align: center;
                     font-family: 'Marck Script', cursive;
                     font-size: 30px;
                     color: rgb(255, 255, 255);
                 }
+
                 #happy-b-d, #garlands, #new-born, #gender-party, #photozones, #others {
                     text-align: center;
                     display: flex;
@@ -367,13 +374,47 @@
                     text-align: center;
                     margin: 5px;
                     background-color: rgba(255, 254, 254, 0.233);
-                    border: 2px solid  rgb(189, 137, 176);
+                    border: 2px solid rgb(189, 137, 176);
                 }
+
                 .catalog-item p {
                     background-color: rgb(189, 137, 176);
                     color: rgb(255, 255, 255);
                     font-family: 'Montserrat Alternates', sans-serif;
                     font-size: 15px;
-                    border: 1px solid  rgb(189, 137, 176);
+                    border: 1px solid rgb(189, 137, 176);
                 }
-               
+
+                /* ===== Shipping - Payment ==== */
+
+                .delivery-payment {
+                    background-color: rgba(104, 95, 95, 0.055);
+                    border-radius: 5px;
+                    padding-bottom: 70px;
+                    margin-top: 60px;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 30px;
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+
+                .delivery-payment-header {
+                    font-family: 'Marck Script', cursive;
+                    font-size: 40px;
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .delivery-payment {
+                        font-size: 15px;
+                    }
+                    .delivery-payment-header {
+                        font-size: 30px;
+                    }
+                }

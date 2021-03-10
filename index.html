@@ -8,7 +8,9 @@
     <title>Воздушная Академия</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Prata&family=Seymour+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Prata&family=Seymour+One&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./photo/logo.png" type="image/png">
@@ -17,15 +19,15 @@
 <body>
     <header>
         <div class="main">
-        <a href="index.html">
-            <img src="./photo/logo.png" class="logo-img" alt="Логотип Воздушная Академия" width="250px">
-        </a>
+            <a href="index.html">
+                <img src="./photo/logo.png" class="logo-img" alt="Логотип Воздушная Академия" width="250px">
+            </a>
             </span>
             <span class="contacts">
                 <a href="https://wa.me/79803441988" class="tel">+7(980)344-19-88</a>
-                <a href="tel:+79003007474"  class="tel">+7(900)300-74-74</a>
-                <a href="tel:+79009517676"  class="tel">+7(900)951-76-76</a>
-              </span>
+                <a href="tel:+79003007474" class="tel">+7(900)300-74-74</a>
+                <a href="tel:+79009517676" class="tel">+7(900)951-76-76</a>
+            </span>
         </div>
         <nav class="site-menu">
             <a href="./index.html" class="home">Главная</a>
@@ -42,13 +44,25 @@
             </div>
             <a href="./html/shipping-payment.html" class="shipping-payment">Доставка и Оплата</a>
         </nav>
-              <a href="#" onclick="openbox('box'); " class="burger-icon"><img src="./photo/burger-icon.png" alt="menu icon" width="50px"> </a>
-              <div id="box" style="display: none;"><nav class="burger-menu">
+        <a class="burger-icon"><img src="./photo/burger-icon.png" alt="menu icon" width="50px"> </a>
+        <div class="box" style="display: none">
+            <nav class="burger-menu">
                 <a href="./index.html" class="home">Главная</a>
-                <a href="./html/catalog.html" class="catalog">Каталог</a>
+                <a class="burger-menu-catalog">Каталог</a>
+                <div class="burger-menu-dropdown-content" style="display: none">
+                    <p><a href="./html/catalog.html#happy-b-d">День Рождение</a></p>
+                    <p><a href="./html/catalog.html#garlands">Гирлянды</a></p>
+                    <p><a href="./html/catalog.html#new-born">Выписка</a></p>
+                    <p><a href="./html/catalog.html#gender-party">Гендер пати</a></p>
+                    <p><a href="./html/catalog.html#photozones">Фотозоны</a></p>
+                    <p><a href="./html/catalog.html#others">Другие</a>
+                    <p>
+                </div>
                 <a href="./html/shipping-payment.html" class="shipping-payment">Доставка и Оплата</a>
-              </nav>
-            </div>
+                <a class="close-burger-icon" style="display: none"><img src="./photo/close-burger-menu.png"
+                    alt="close menu icon" width="20px"> </a>
+            </nav>
+        </div>
 
     </header>
     <main>
@@ -65,7 +79,8 @@
             <span>
                 <p class="img-versel "><img src="./photo/vensel.png " width="300px "></p>
                 <p class="quote-1">
-                    В жизни каждого человека есть 100500 поводов для праздника и каждый из них мы готовы сделать ярким и незабываемым!
+                    В жизни каждого человека есть 100500 поводов для праздника и каждый из них мы готовы сделать ярким и
+                    незабываемым!
                 </p>
             </span>
         </aside>
@@ -82,13 +97,13 @@
         </section>
         <section class="about">
             <span>
-               <h1 class="about-header">Почему выбирают Нас ?</h1>
-               <div class="text-about">
-               <h4>Уже более 1500 Воронежцев - доверили Нам, украсить самые важные моменты своей жизни.</h4>
-                  <li>Доставка точно ко времени</li>
-                   <li>Полет шаров от 3 дней</li>
-                   <li>Приемлемые цены</li>
-                   <li>Сертифицированные товары</li>
+                <h1 class="about-header">Почему выбирают Нас ?</h1>
+                <div class="text-about">
+                    <h4>Уже более 1500 Воронежцев - доверили Нам, украсить самые важные моменты своей жизни.</h4>
+                    <li>Доставка точно ко времени</li>
+                    <li>Полет шаров от 3 дней</li>
+                    <li>Приемлемые цены</li>
+                    <li>Сертифицированные товары</li>
                 </div>
             </span>
         </section>
@@ -124,37 +139,42 @@
                     <img src="./recalls/recall1.jpg" class="item" alt="Reccal Image" width="300px" height="450px">
                 </div>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
+            </div>
         </section>
         <section>
             <div class="feedback-tels">
                 <h1>Остались вопросы?</h1>
                 <h4>Свяжитесь с нами любым удобным способом и наши мастера подберут наилучший вариант для Вас </h4>
-                  <span class="contacts">
-                    <a href="https://wa.me/79803441988" >+7(980)344-19-88</a>
-                    <a href="tel:+79003007474" >+7(900)300-74-74</a>
-                    <a href="tel:+79009517676" >+7(900)951-76-76</a>
-                  </span>
+                <span class="contacts">
+                    <a href="https://wa.me/79803441988">+7(980)344-19-88</a>
+                    <a href="tel:+79003007474">+7(900)300-74-74</a>
+                    <a href="tel:+79009517676">+7(900)951-76-76</a>
+                </span>
             </div>
         </section>
     </main>
     <div class="swipe-up ">
-        <a href="./index.html "><img src="./photo/top-icon.png " alt="Wats-up " class="swipe-up-icon "width="50px "> </a>
+        <a href="./index.html "><img src="./photo/top-icon.png " alt="Wats-up " class="swipe-up-icon " width="50px ">
+        </a>
     </div>
     <footer>
         <div class="feedback">
-            <a href="https://wa.me/79803441988 " target="_blank"> <img src="./photo/whatsapp-symbol.svg " alt="Wats-up " width="30px "></a>
-            <a href="https://www.instagram.com/vozdushnaia_akademia_vrn/?hl=ru " target="_blank" ><img src="./photo/instagramIcon.png " alt="Instagram Logotip " width="30px "></a>
-            <a href="https://www.facebook.com/search/top?q=vozdushnaia_akademia_vrn " target="_blank">  <img src="./photo/facebook-logo.png " alt="FaceBook Logotip " width="30px "></a>
-            <a href="https://vk.com/vozdushnayaakademiya " target="_blank"> <img src="./photo/vk-logotip.svg " alt="FaceBook Logotip " width="30px "></a>
+            <a href="https://wa.me/79803441988 " target="_blank"> <img src="./photo/whatsapp-symbol.svg " alt="Wats-up "
+                    width="30px "></a>
+            <a href="https://www.instagram.com/vozdushnaia_akademia_vrn/?hl=ru " target="_blank"><img
+                    src="./photo/instagramIcon.png " alt="Instagram Logotip " width="30px "></a>
+            <a href="https://www.facebook.com/search/top?q=vozdushnaia_akademia_vrn " target="_blank"> <img
+                    src="./photo/facebook-logo.png " alt="FaceBook Logotip " width="30px "></a>
+            <a href="https://vk.com/vozdushnayaakademiya " target="_blank"> <img src="./photo/vk-logotip.svg "
+                    alt="FaceBook Logotip " width="30px "></a>
         </div>
         <a href="index.html ">
             <img src="./photo/logo.png " alt="Логотип Воздушная Академия " width="100px ">
         </a>
 
-       
+
         <p>H.Kanakaryan &#169 2021</p>
-       
+
     </footer>
     <script src="script.js"></script>
 </body>

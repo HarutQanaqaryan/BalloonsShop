@@ -32,24 +32,32 @@
         <nav class="site-menu">
             <a href="../index.html" class="home">Главная</a>
             <div class="dropdown">
-                <a href="./html/catalog.html" class="catalog">Каталог</a>
+                <a href="catalog.html" class="catalog">Каталог</a>
                 <div class="dropdown-content">
-                    <a href="./html/catalog.html#happy-b-d">День Рождение</a>
-                    <a href="./html/catalog.html#garlands">Гирлянды</a>
-                    <a href="./html/catalog.html#new-born">Выписка</a>
-                    <a href="./html/catalog.html#gender-party">Гендер пати</a>
-                    <a href="./html/catalog.html#photozones">Фотозоны</a>
-                    <a href="./html/catalog.html#others">Другие</a>
+                    <a href="../html/catalog.html#happy-b-d">День Рождение</a>
+                    <a href="../html/catalog.html#garlands">Гирлянды</a>
+                    <a href="../html/catalog.html#new-born">Выписка</a>
+                    <a href="../html/catalog.html#gender-party">Гендер пати</a>
+                    <a href="../html/catalog.html#photozones">Фотозоны</a>
+                    <a href="../html/catalog.html#others">Другие</a>
                 </div>
             </div>
             <a href="../html/shipping-payment.html" class="shipping-payment">Доставка и Оплата</a>
         </nav>
-        <a href="#" onclick="openbox('box'); " class="burger-icon"><img src="../photo/burger-icon.png" alt="menu icon"
-                width="50px"> </a>
-        <div id="box" style="display: none;">
+        <a href="#" class="burger-icon" style="display: block"><img src="../photo/burger-icon.png" alt="menu icon" width="50px"> </a>
+        <a href="#" class="close-burger-icon" style="display: none"><img src="../photo/close-burger-menu.png" alt="close menu icon" width="40px"> </a>
+        <div class="box" style="display: none">
             <nav class="burger-menu">
                 <a href="../index.html" class="home">Главная</a>
-                <a href="../html/catalog.html" class="catalog">Каталог</a>
+                <a class="burger-menu-catalog">Каталог</a>
+                <div class="burger-menu-dropdown-content" style="display: none">
+                    <p><a href="../html/catalog.html#happy-b-d">День Рождение</a></p>
+                    <p><a href="../html/catalog.html#garlands">Гирлянды</a></p>
+                    <p><a href="../html/catalog.html#new-born">Выписка</a></p>
+                    <p><a href="../html/catalog.html#gender-party">Гендер пати</a></p>
+                    <p><a href="../html/catalog.html#photozones">Фотозоны</a></p>
+                    <p><a href="../html/catalog.html#others">Другие</a><p>
+                </div>
                 <a href="../html/shipping-payment.html" class="shipping-payment">Доставка и Оплата</a>
             </nav>
         </div>
@@ -468,7 +476,7 @@
             </div>
 
         </section>
-        <h1>Другое</h1>
+        <h1>Другие</h1>
         <section id="others">
             <div class="catalog-item">
                 <img src="../baloons shop catalog/Others-O770/O770-0.jpg" alt="image others" width="250px"
@@ -601,7 +609,7 @@
             <a href="https://vk.com/vozdushnayaakademiya " target="_blank"> <img src="../photo/vk-logotip.svg "
                     alt="FaceBook Logotip " width="30px "></a>
         </div>
-        <a href="index.html ">
+        <a href="../index.html ">
             <img src="../photo/logo.png " alt="Логотип Воздушная Академия " width="100px ">
         </a>
 
