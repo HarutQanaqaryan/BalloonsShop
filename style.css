@@ -190,10 +190,6 @@ a:hover {
     .swipe-up-icon {
         width: 40px;
     }
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 .home-page-photos {
@@ -374,6 +370,12 @@ footer {
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* ==== Catalog ==== */
 
 .catalog-container {
