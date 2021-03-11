@@ -318,6 +318,9 @@ a:hover {
 .burger-icon {
     display: none;
 }
+.box {
+    display: none;
+}
 
 .burger-menu {
     text-align: center;
@@ -330,7 +333,7 @@ a:hover {
 }
 
 .burger-menu-dropdown-content {
-    font-size: 15px;
+    display: none;
 }
 
 @media screen and (max-width: 900px) {
