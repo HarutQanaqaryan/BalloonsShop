@@ -49,3 +49,5 @@ iconCloseCatalog.addEventListener("click", () => {
 
 
 
+
+
