@@ -7,7 +7,19 @@ function nextSlide(){
   slides[currentSlide].className = 'slide showing';
 }
 
+let catalog = document.querySelectorAll(".catalog-container img")
 
+catalog.forEach((el) => {
+    el.addEventListener("click", () => {
+        if(el.style.width == "250px" && el.style.height == "280px"){
+            el.style.width = "500px";
+            el.style.height = "600px";
+        }else {
+            el.style.width = "250px";
+            el.style.height = "280px";
+        }
+    })
+})
 //  ===== Open Burger Menu =====
 
 let openBurgerMenu = document.querySelector('.burger-icon')
