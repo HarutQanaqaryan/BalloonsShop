@@ -22,9 +22,9 @@
 
 #### Files
 
-1. * index.html * the main page of the site
+1. *index.html* the main page of the site
 2. *script.js* JavaScript code
 3. *style.css* all styles of the site 
 
-##### do not judge strictly :) 
-##### sorry for my english :) 
+##### *do not judge strictly :) 
+##### *sorry for my english :) 
