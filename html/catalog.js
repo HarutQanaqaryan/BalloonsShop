@@ -4,13 +4,17 @@ let catalog = document.querySelectorAll(".catalog-container img");
 let closeImage = document.querySelector(".close-image")
 let maxImage = document.querySelector(".maximize-image");
 let pic = maxImage.appendChild(document.createElement('img'))
-
+let isMobile = window.screen.width
 catalog.forEach((el) => {
     el.addEventListener("click", () => {
+       if(isMobile >= 600) {
         pic.setAttribute('src', el.src);
         maxImage.style.display = 'block';
         pic.style.width = "500px";
         pic.style.height = "600px";
+       }else {
+           return false;
+       }
     })
 })
 
