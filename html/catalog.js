@@ -8,17 +8,17 @@ let screenWidth = screen.width
 
 catalog.forEach((el) => {
     el.addEventListener("click", () => {
-       if(screenWidth >= 650) {
-        pic.setAttribute('src', el.src);
-        maxImage.style.display = 'block';
-        pic.style.width = "500px";
-        pic.style.height = "600px";
-       }else {
-          return false;
-       }
+        if (screenWidth >= 650) {
+            pic.setAttribute('src', el.src);
+            maxImage.style.display = 'block';
+            pic.style.width = "500px";
+            pic.style.height = "600px";
+        } else {
+            return false;
+        }
     })
 })
- 
+
 closeImage.addEventListener("click", () => {
     maxImage.style.display = 'none';
     pic.innerHTML = ''

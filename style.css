@@ -235,12 +235,14 @@ a:hover {
 }
 
 /* ======== Slider ======== */
+
 .recalls-header {
     text-align: center;
     font-family: 'Marck Script', cursive;
     font-size: 40px;
     color: rgb(255, 255, 255);
 }
+
 #slides {
     background-color: rgba(255, 254, 254, 0.205);
     width: 180px;
@@ -299,25 +301,29 @@ a:hover {
 .slide:nth-of-type(5) {
     background-image: url(./recalls/slide5.jpg);
 }
+
 .slide:nth-of-type(6) {
     background-image: url(./recalls/slide6.jpg);
 }
+
 .slide:nth-of-type(7) {
     background-image: url(./recalls/slide7.jpg);
 }
+
 .slide:nth-of-type(8) {
     background-image: url(./recalls/slide8.jpg);
 }
+
 .slide:nth-of-type(9) {
     background-image: url(./recalls/slide9.jpg);
 }
-
 
 /* ===== Burger Menu ===== */
 
 .burger-icon {
     display: none;
 }
+
 .box {
     display: none;
 }
@@ -379,6 +385,7 @@ footer {
         flex-direction: column;
     }
 }
+
 /* ==== Catalog ==== */
 
 .catalog-container {
@@ -387,7 +394,7 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-.catalog-container  h1{
+.catalog-container h1 {
     text-align: center;
 }
 
@@ -398,6 +405,7 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+
 @media screen and (max-width: 800px) {
     #happy-b-d, #garlands, #new-born, #gender-party, #photozones, #others {
         display: flex;
@@ -430,11 +438,10 @@ footer {
     height: 50px;
     margin-top: -250px;
 }
+
 .maximize-image img {
     cursor: pointer;
 }
-
-
 
 /* ===== Shipping - Payment ==== */
 
@@ -469,4 +476,3 @@ footer {
         font-size: 30px;
     }
 }
-

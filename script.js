@@ -2,13 +2,13 @@
 
 let slides = document.querySelectorAll('#slides .slide');
 let currentSlide = 0;
-let slideInterval = setInterval(nextSlide,3000);
+let slideInterval = setInterval(nextSlide, 3000);
 
-function nextSlide(){
-  currentSlide = (currentSlide+1)%slides.length;
-  slides[currentSlide].className = "slide showing";
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = "slide showing";
 }
- 
+
 
 //  ===== Open Burger Menu =====
 
