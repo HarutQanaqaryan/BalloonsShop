@@ -16,14 +16,14 @@
 
 1.  *baloons shop catalog* where are all the photos with the design of the holiday
 2.  *home page photos* where are all the photos that are posted on the main page
-3.  *html* Html files, catalog page and delivery and payment
+3.  *html* Html & JS files, catalog page and delivery / payment
 4.  *photo* all icons of site
 5.  *recalls* screenshots of our company reviews
 
 #### Files
 
 1. *index.html* the main page of the site
-2. *script.js* JavaScript code
+2. *script.js* JavaScript code for index.html
 3. *style.css* all styles of the site 
 
 ##### *do not judge strictly :) 
