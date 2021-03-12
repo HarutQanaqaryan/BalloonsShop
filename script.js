@@ -1,25 +1,35 @@
+//  ========= Slider =========
+
 let slides = document.querySelectorAll('#slides .slide');
 let currentSlide = 0;
 let slideInterval = setInterval(nextSlide,3000);
 
 function nextSlide(){
   currentSlide = (currentSlide+1)%slides.length;
-  slides[currentSlide].className = 'slide showing';
+  slides[currentSlide].className = "slide showing";
 }
+ 
+//   ========== Maximize Catalog Image ==========
 
-let catalog = document.querySelectorAll(".catalog-container img")
+let catalog = document.querySelectorAll(".catalog-container img");
+let closeImage = document.querySelector(".close-image")
+let maxImage = document.querySelector(".maximize-image");
+let pic = maxImage.appendChild(document.createElement('img'))
 
 catalog.forEach((el) => {
     el.addEventListener("click", () => {
-        if(el.style.width == "250px" && el.style.height == "280px"){
-            el.style.width = "500px";
-            el.style.height = "600px";
-        }else {
-            el.style.width = "250px";
-            el.style.height = "280px";
-        }
+        pic.setAttribute('src', el.src);
+        maxImage.style.display = 'block';
+        pic.style.width = "500px";
+        pic.style.height = "600px";
     })
 })
+
+closeImage.addEventListener("click", () => {
+    maxImage.style.display = 'none';
+    pic.innerHTML = ''
+})
+
 //  ===== Open Burger Menu =====
 
 let openBurgerMenu = document.querySelector('.burger-icon')
@@ -31,8 +41,8 @@ openBurgerMenu.addEventListener("click", () => {
     // } else {
     //     burgerMenu.style.display = "none"
     // }
-       burgerMenu.classList.toggle("box");
-    }) 
+    burgerMenu.classList.toggle("box");
+})
 
 
 // ===== Open Catalog of Burger-menu ====
