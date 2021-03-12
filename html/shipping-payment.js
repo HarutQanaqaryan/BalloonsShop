@@ -1,18 +1,3 @@
-//  ========= Slider =========
-
-let slides = document.querySelectorAll('#slides .slide');
-let currentSlide = 0;
-let slideInterval = setInterval(nextSlide,3000);
-
-function nextSlide(){
-  currentSlide = (currentSlide+1)%slides.length;
-  slides[currentSlide].className = "slide showing";
-}
- 
-
-//  ===== Open Burger Menu =====
-
-
 let openBurgerMenu = document.querySelector('.burger-icon')
 let burgerMenu = document.querySelector('.box')
 
@@ -49,8 +34,3 @@ iconCloseCatalog.addEventListener("click", () => {
     // }
     burgerMenuCatalog.classList.toggle('burger-menu-dropdown-content')
 })
-
-
-
-
-

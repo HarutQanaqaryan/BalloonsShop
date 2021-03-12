@@ -1,17 +1,23 @@
-//  ========= Slider =========
+//   ========== Maximize Catalog Image ==========
 
-let slides = document.querySelectorAll('#slides .slide');
-let currentSlide = 0;
-let slideInterval = setInterval(nextSlide,3000);
+let catalog = document.querySelectorAll(".catalog-container img");
+let closeImage = document.querySelector(".close-image")
+let maxImage = document.querySelector(".maximize-image");
+let pic = maxImage.appendChild(document.createElement('img'))
 
-function nextSlide(){
-  currentSlide = (currentSlide+1)%slides.length;
-  slides[currentSlide].className = "slide showing";
-}
- 
+catalog.forEach((el) => {
+    el.addEventListener("click", () => {
+        pic.setAttribute('src', el.src);
+        maxImage.style.display = 'block';
+        pic.style.width = "500px";
+        pic.style.height = "600px";
+    })
+})
 
-//  ===== Open Burger Menu =====
-
+closeImage.addEventListener("click", () => {
+    maxImage.style.display = 'none';
+    pic.innerHTML = ''
+})
 
 let openBurgerMenu = document.querySelector('.burger-icon')
 let burgerMenu = document.querySelector('.box')
@@ -49,8 +55,3 @@ iconCloseCatalog.addEventListener("click", () => {
     // }
     burgerMenuCatalog.classList.toggle('burger-menu-dropdown-content')
 })
-
-
-
-
-
