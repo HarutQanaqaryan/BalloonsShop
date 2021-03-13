@@ -1,3 +1,11 @@
+// ===== Text decoration current page =====
+
+let delliveryPaymentPage = document.querySelector(".shipping-payment");
+
+if (window.location.pathname.includes("/shipping-payment.html")) {
+    delliveryPaymentPage.style.color = "rgb(135, 130, 136)"
+}
+
 let openBurgerMenu = document.querySelector('.burger-icon')
 let burgerMenu = document.querySelector('.box')
 

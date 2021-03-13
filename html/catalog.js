@@ -1,3 +1,10 @@
+// ===== Text decoration current page =====
+
+let catalogPage = document.querySelector(".catalog");
+
+if (window.location.pathname.includes("/catalog.html")) {
+    catalogPage.style.color = "rgb(135, 130, 136)"
+}
 //   ========== Maximize Catalog Image ==========
 
 let catalog = document.querySelectorAll(".catalog-container img");

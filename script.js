@@ -1,3 +1,10 @@
+// ===== Text decoration current page =====
+let homePage = document.querySelector(".home");
+
+if (window.location.pathname.includes("/index.html")) {
+   homePage.style.color = "rgb(135, 130, 136)"
+}
+
 //  ========= Slider =========
 
 let slides = document.querySelectorAll('#slides .slide');
