@@ -26,6 +26,7 @@ catalog.forEach((el) => {
     })
 })
 
+
 closeImage.addEventListener("click", () => {
     maxImage.style.display = 'none';
     pic.innerHTML = ''
